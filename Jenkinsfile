@@ -1,7 +1,7 @@
 pipeline{
 agent any
 stages{
-stage("call")
+stage("call"){
 steps{
 def jenkinsfile1 = load 'jenkinsfile1.groovy'
 def jenkinsfile2 = load 'jenkinsfile2.groovy'
