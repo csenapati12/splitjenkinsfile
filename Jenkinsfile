@@ -1,18 +1,7 @@
-pipeline {
-    agent any
-	options { 
-    disableConcurrentBuilds() 
-  }
-    stages {
-        stage('Part 1') {
-            steps {
-                load 'jenkinsfile1.groovy' // Load contents of Jenkinsfile-part1.groovy
-            }
-        }
-        stage('Part 2') {
-            steps {
-                load 'jenkinsfile2.groovy' // Load contents of Jenkinsfile-part2.groovy
-            }
-        }
-    }
-}
+
+def jenkinsfile1 = load 'jenkinsfile1.groovy'
+def jenkinsfile2 = load 'jenkinsfile2.groovy'
+
+// Call Jenkinsfile1 as a closure
+jenkinsfile1.call()
+jenkinsfile2.call()
