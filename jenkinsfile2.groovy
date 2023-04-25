@@ -1,4 +1,4 @@
-stages {
+
     stage('Stage 3') {
         steps {
              script{
@@ -14,4 +14,3 @@ stages {
         }
     }
   
-}
