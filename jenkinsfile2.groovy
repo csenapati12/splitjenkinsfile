@@ -1,5 +1,4 @@
-// Jenkinsfile-part2.groovy
-stages {
+
     stage('Stage 3') {
         steps {
              echo "stage3"
@@ -7,7 +6,7 @@ stages {
     }
     stage('Stage 4') {
         steps {
-             echo "stage4"
+             echo "stage4	"
         }
     }
-}
+
