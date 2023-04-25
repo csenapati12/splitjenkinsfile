@@ -1,16 +1,13 @@
-
+// Jenkinsfile-part2.groovy
+stages {
     stage('Stage 3') {
         steps {
-             script{
-			   echo "stage3"
-			   }
+            // Define steps for Stage 3
         }
     }
     stage('Stage 4') {
         steps {
-             script{
-			   echo "stage4"
-			   }
+            // Define steps for Stage 4
         }
     }
-  
+}
