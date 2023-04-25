@@ -1,16 +1,16 @@
-
+// Jenkinsfile-part1.groovy
+pipeline {
+    agent any
+    stages {
         stage('Stage 1') {
             steps {
-               script{
-			   echo "stage1"
-			   }
+                // Define steps for Stage 1
             }
         }
         stage('Stage 2') {
             steps {
-               script{
-			   echo "stage2"
-			   }
+                // Define steps for Stage 2
             }
         }
-    
+    }
+}
